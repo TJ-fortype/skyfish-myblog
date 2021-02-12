@@ -5,9 +5,9 @@ import NotFound from '../views/NotFound.vue'
 
 // 接口字典
 const routes = [
-	{name:'Index' path: '/', component: Index},
+	{name:'Index', path: '/', component: Index},
 	
-	{path: '/:pathNotFound(.*)', component: NotFound},
+	{name:'NotFound', path: '/:pathNotFound(.*)', component: NotFound},
 ]
 
 const router = createRouter({

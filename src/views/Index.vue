@@ -1,22 +1,19 @@
 <template>
-    <div>
-
-    </div>
+    <AddBlog></AddBlog>
 </template>
 
 <script>
+import AddBlog from '../components/博客主体组件/AddBlog'
+
 export default {
     name:'Index',
     components: {
-        
-    },
-    props: {
-        
+        AddBlog,
     },
     data() {
-        return {
-
-        };
+      return {
+        
+      }
     },
     computed: {
 
@@ -25,3 +22,4 @@ export default {
 
     },
 };
+</script>
