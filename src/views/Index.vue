@@ -6,12 +6,12 @@
 
 <script>
 export default {
-    name:'',
+    name:'Index',
     components: {
-
+        
     },
     props: {
-
+        
     },
     data() {
         return {
