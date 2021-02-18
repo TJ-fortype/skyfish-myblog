@@ -66,9 +66,6 @@ export default {
 </script>
 
 <style scoped>
-#add-blog * {
-    box-sizing: border-box;
-}
 #add-blog {
     margin: 20px auto;
     max-width: 600px;
@@ -79,9 +76,10 @@ label {
     display: block;
     margin: 20px 0 10px;
 }
-input[type='text'],
+input[type="text"],
 textarea,
 select {
+    border: 2px solid #ccccff;
     display: block;
     width: 100%;
     padding: 8px;
@@ -90,7 +88,9 @@ select {
 textarea {
     height: 250px;
 }
-
+#check-boxes{
+    display: inline-block;
+}
 #check-boxes label {
     display: inline-block;
     margin-top: 0;
@@ -106,6 +106,7 @@ button {
     background: #ccccff;
     color: #fff;
     border: 0;
+    outline: none;
     padding: 14px;
     border-radius: 4px;
     font-size: 16px;

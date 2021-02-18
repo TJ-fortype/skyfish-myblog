@@ -6,7 +6,7 @@ body {
 	margin: 0;
 	padding: 0;
 	height: 100%;
-	color: #999;
+	color: rgb(50,50,50);
 	background: #fff; 
 	font-family: "arial, helvetica, sans-serif";  	/*字体*/
 	font-size: 12px;								/*字体大小*/
@@ -27,4 +27,11 @@ ul {
 }
 li {
 	list-style: none;	
+}
+
+input[type="text"], /*輸入框默認樣式*/
+textarea,
+select {
+    outline: none;
+    background: rgba(f,f,f,.3);
 }
