@@ -1,0 +1,30 @@
+/* 此文件中包含所有页面都共用的全局CSS */
+* {		/*选择所有的元素*/
+	box-sizing: border-box; /*边框盒子，简化盒子尺寸计算*/
+}
+body {
+	margin: 0;
+	padding: 0;
+	height: 100%;
+	color: #999;
+	background: #fff; 
+	font-family: "arial, helvetica, sans-serif";  	/*字体*/
+	font-size: 12px;								/*字体大小*/
+	line-height: 1.667;								/*行高：1.667em；*/
+}
+a {
+	color: #CCCCFF;
+	text-decoration: none;
+}
+a:hover {	/*伪类选择器，选中“鼠标悬停的状态”*/
+	transition: all .3s;
+	color: #FF4700;
+}
+ol, 
+ul {
+	margin: 0;			/*清除浏览器为列表自动添加的样式*/
+	padding: 0;			
+}
+li {
+	list-style: none;	
+}

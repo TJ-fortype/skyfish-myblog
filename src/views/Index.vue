@@ -3,7 +3,7 @@
 </template>
 
 <script>
-import AddBlog from '../components/博客主体组件/AddBlog'
+import AddBlog from '../components/Main-Blog/AddBlog.vue'
 
 export default {
     name:'Index',
