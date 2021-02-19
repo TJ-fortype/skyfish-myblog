@@ -1,37 +1,39 @@
 /* 此文件中包含所有页面都共用的全局CSS */
-* {		/*选择所有的元素*/
-	box-sizing: border-box; /*边框盒子，简化盒子尺寸计算*/
+* {
+    /*选择所有的元素*/
+    box-sizing: border-box; /*边框盒子，简化盒子尺寸计算*/
 }
 body {
-	margin: 0;
-	padding: 0;
-	height: 100%;
-	color: rgb(50,50,50);
-	background: #fff; 
-	font-family: "arial, helvetica, sans-serif";  	/*字体*/
-	font-size: 12px;								/*字体大小*/
-	line-height: 1.667;								/*行高：1.667em；*/
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    color: rgb(50, 50, 50);
+    background: #fff;
+    font-family: 'arial, helvetica, sans-serif'; /*字体*/
+    font-size: 18px; /*字体大小*/
+    line-height: 1.667; /*行高：1.667em；*/
 }
 a {
-	color: #CCCCFF;
-	text-decoration: none;
+    color: #ccccff;
+    text-decoration: none;
 }
-a:hover {	/*伪类选择器，选中“鼠标悬停的状态”*/
-	transition: all .3s;
-	color: #FF4700;
+a:hover {
+    /*伪类选择器，选中“鼠标悬停的状态”*/
+    transition: all 0.3s;
+    color: #ff4700;
 }
-ol, 
+ol,
 ul {
-	margin: 0;			/*清除浏览器为列表自动添加的样式*/
-	padding: 0;			
+    margin: 0; /*清除浏览器为列表自动添加的样式*/
+    padding: 0;
 }
 li {
-	list-style: none;	
+    list-style: none;
 }
 
 input[type="text"], /*輸入框默認樣式*/
 textarea,
 select {
     outline: none;
-    background: rgba(f,f,f,.3);
+    background: rgba(255, 255, 255, 0.3);
 }

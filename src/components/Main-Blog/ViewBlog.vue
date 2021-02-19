@@ -2,7 +2,7 @@
     <div id="view-blogs">
         <h1>博客总览</h1>
         <div class="single-blog" v-for="blog in blogList" :key="blog">
-            <h2 v-color>{{ blog.title }}</h2>
+            <h2 v-Rcolor>{{ blog.title }}</h2>
             <article>
                 {{ blog.body }}
             </article>

@@ -6,8 +6,10 @@ import './assets/css/base.css'
 
 createApp(App).use(router).mount('#app')
 
+const app = createApp(App)
+
 //自定义指令
-Vue.directive('color',{
+app.directive('Rncolor',{
 	bind(el,binding,vnode){
 		el.style.color = "#" + Math.random().toString(16).slice(2,8)
 	}

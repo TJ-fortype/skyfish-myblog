@@ -4,22 +4,18 @@
 
 <script>
 import AddBlog from '../components/Main-Blog/AddBlog.vue'
+import ViewBlog from '../components/Main-Blog/ViewBlog.vue'
 
 export default {
-    name:'Index',
+    name: 'Index',
     components: {
         AddBlog,
+        ViewBlog,
     },
     data() {
-      return {
-        
-      }
+        return {}
     },
-    computed: {
-
-    },
-    methods: {
-
-    },
-};
+    computed: {},
+    methods: {},
+}
 </script>

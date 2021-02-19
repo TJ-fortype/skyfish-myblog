@@ -13,7 +13,7 @@
                 <label>{{ check.name }}</label>
                 <input type="checkbox" :value="check.value" v-model="blog.categories" />
             </div>
-            <button @click.prevent="post">添加博客</button>
+            <button @click.prevent="doSendMsg">添加博客</button>
         </form>
         <hr />
         <section id="preview">
@@ -50,15 +50,22 @@ export default {
         }
     },
     methods: {
-        post: function() {
-            axios
-                .post('http://jsonplaceholder.typicode.com/posts', {
-                    title: this.blog.title,
-                    body: this.blog.content,
-                    userId: 1,
+        doSendMsg() {
+            let url = 'http://127.0.0.1:5050/add-blog'
+            let body = `title=${this.blog.title}&content=${this.blog.content}&categories=${this.blog.categories}` //请求的主体
+            fetch(url, {
+                method: 'POST',
+                body,
+                headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+            })
+                .then((res) => {
+                    return res.json()
                 })
-                .then(function(data) {
-                    console.log(data)
+                .then((data) => {
+                    alert('添加成功！新博客在系统中的编号为：' + data.id)
+                })
+                .catch((e) => {
+                    console.log(e)
                 })
         },
     },
@@ -70,13 +77,14 @@ export default {
     margin: 20px auto;
     max-width: 600px;
     padding: 20px;
+    background-color: rgba(255, 255, 255, 0.3);
 }
 
 label {
     display: block;
     margin: 20px 0 10px;
 }
-input[type="text"],
+input[type='text'],
 textarea,
 select {
     border: 2px solid #ccccff;
@@ -88,7 +96,7 @@ select {
 textarea {
     height: 250px;
 }
-#check-boxes{
+#check-boxes {
     display: inline-block;
 }
 #check-boxes label {
