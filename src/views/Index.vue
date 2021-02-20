@@ -1,16 +1,13 @@
 <template>
-    <AddBlog></AddBlog>
+    <NavBar></NavBar>
 </template>
 
 <script>
-import AddBlog from '../components/Main-Blog/AddBlog.vue'
-import ViewBlog from '../components/Main-Blog/ViewBlog.vue'
-
+import NavBar from '../components/Main-Nav/NavBar.vue'
 export default {
     name: 'Index',
     components: {
-        AddBlog,
-        ViewBlog,
+        NavBar,
     },
     data() {
         return {}

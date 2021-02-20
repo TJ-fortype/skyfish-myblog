@@ -119,6 +119,12 @@ button {
     border-radius: 4px;
     font-size: 16px;
     cursor: pointer;
+    transition: 0.5s;
+}
+
+button:hover {
+    background: #fff;
+    color: #ff4700;
 }
 
 #preview {
