@@ -13,7 +13,7 @@ export default {
 }
 </script>
 
-<style>
+<style lang="css" scoped>
 .searchBox {
     height: 40px;
     border-radius: 40px;

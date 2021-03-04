@@ -42,6 +42,8 @@ export default {
                 title: '',
                 content: '',
                 categories: [],
+                sendtime: '',
+                openBox: '',
             },
             checkList: [
                 { name: 'Vue.js', value: 'Vue.js' },
@@ -52,7 +54,9 @@ export default {
     methods: {
         doSendMsg() {
             let url = 'http://127.0.0.1:5050/add-blog'
-            let body = `title=${this.blog.title}&content=${this.blog.content}&categories=${this.blog.categories}` //请求的主体
+            let d = new Date()
+            this.blog.sendtime = d
+            let body = `title=${this.blog.title}&categories=${this.blog.categories}&content=${this.blog.content}&sendtime=${this.blog.sendtime}&openBox=${this.blog.openBox}` //请求的主体
             fetch(url, {
                 method: 'POST',
                 body,
@@ -95,6 +99,7 @@ select {
 
 textarea {
     height: 250px;
+    resize: none;
 }
 #check-boxes {
     display: inline-block;
